@@ -1,0 +1,41 @@
+.header {
+  padding-bottom: 28px;
+  padding-top: 28px;
+  background: #222b52;
+}
+.container {
+  display: flex;
+  width: 83%;
+  margin: auto;
+  justify-content: space-between;
+}
+.logo,
+.divide {
+  cursor: pointer;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  grid-gap: 65px;
+}
+.menubar {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.menubar:hover {
+  transition: 2s;
+  border-bottom: 1px solid #ffffff;
+}
+@media screen and (max-width: 1204px) {
+  .menubar {
+    font-weight: 300;
+    font-size: 12px;
+  }
+}

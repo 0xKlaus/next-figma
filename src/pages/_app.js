@@ -1,13 +1,11 @@
-import Head from "next/head";
 import React from "react";
+
+// import styles
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <React.Fragment>
-      <Head>
-        <title>AAVE</title>
-        <link rel="icon" href="icon/aave2.png" />
-      </Head>
       <Component {...pageProps} />
     </React.Fragment>
   );
