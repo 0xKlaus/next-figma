@@ -33,6 +33,12 @@
   transition: 2s;
   border-bottom: 1px solid #ffffff;
 }
+.menubar:active {
+  color: linear-gradient(65.4deg, #c9e4e6 18.74%, #87d4ff 88.33%);
+}
+.menubar:visit {
+  color: linear-gradient(65.4deg, #c9e4e6 18.74%, #87d4ff 88.33%);
+}
 @media screen and (max-width: 1204px) {
   .menubar {
     font-weight: 300;

@@ -120,7 +120,6 @@ const Pagination = ({ data, rowsPerPage }) => {
                     <div className={pstyles.next}>next</div>
                 </div>
             </div>
-            <div className={pstyles.footer}></div>
         </div >
     )
 }

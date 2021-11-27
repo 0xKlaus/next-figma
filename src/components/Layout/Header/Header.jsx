@@ -27,7 +27,7 @@ const Header = () => {
                     <div className={styles.menu}>
                         <div className={styles.menubar} onClick={() => router.push('/mydashboard')} >MY DASHBOARD</div>
                         <div className={styles.menubar} onClick={() => router.push('/myfund')} >MY FUND</div>
-                        <div className={styles.menubar} onClick={() => router.push('/deposit')} >DEPOSIT</div>
+                        <div className={styles.menubar} onClick={() => router.push('/deposit/Deposit')} >DEPOSIT</div>
                         <div className={styles.menubar} onClick={() => router.push('/borrow')} >BORROW</div>
                         <div className={styles.divide}>
                             <Image src={Divide} alt="Divide" />

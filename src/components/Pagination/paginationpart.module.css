@@ -19,7 +19,8 @@
   grid-gap: 15px;
   /* margin-right: auto; */
 }
-.totaltitle {
+.totaltitle,
+.native {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -50,14 +51,5 @@
   font-size: 14px;
   line-height: 21px;
   color: #3881d8;
-  cursor: pointer;
-}
-.native {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
   cursor: pointer;
 }

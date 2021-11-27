@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 // import styles
 import styles from './footer.module.css'
-import tstyles from '../../Pagination/table.module.css'
 
 // import images
 import Logo from '../../../assets/logo.png'
@@ -14,7 +13,7 @@ import Twitter from '../../../assets/twitter.png'
 const Footer = () => {
     return (
         <React.Fragment>
-            <div className={tstyles.footer}></div>
+            <div className={styles.border}></div>
             <div className={styles.footer}>
                 <div className={styles.container}>
                     <div className={styles.image}>

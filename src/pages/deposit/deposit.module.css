@@ -1,0 +1,126 @@
+.header {
+  background: #4e5984;
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+.container1 {
+  width: 83%;
+  margin: auto;
+  display: flex;
+  grid-gap: 60px;
+}
+.container {
+  width: 83%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 30px;
+}
+.group {
+  display: flex;
+  align-items: center;
+  grid-gap: 15px;
+}
+.title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.amount {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 27px;
+  color: #ffffff;
+}
+.other {
+  background: #222b52;
+}
+.modal {
+  margin-top: -10px;
+  background: #353f68;
+  box-shadow: 0px 0px 15px rgba(21, 28, 61, 0.25);
+  border-radius: 15px;
+  width: 100%;
+  padding: 19px 27px 17px 27px;
+}
+.modaltitle {
+  display: flex;
+  justify-content: space-between;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.modalborder {
+  margin: 17px 0 19px 0;
+  border: 1px solid #161e3f;
+}
+.modalcontent {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 150px;
+  padding-bottom: 160px;
+}
+.mgroup1 {
+  display: flex;
+  grid-gap: 135px;
+}
+.mgroup2 {
+  display: flex;
+  grid-gap: 81px;
+}
+.mgroup3 {
+  display: flex;
+  grid-gap: 18px;
+}
+.minimize {
+  display: flex;
+  grid-gap: 8.5px;
+}
+.price {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.yes {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #35d387;
+}
+.deposit {
+  padding-top: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  padding-bottom: 20px;
+}
+.dcontent {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #ffffff;
+}
