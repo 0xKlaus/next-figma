@@ -17,7 +17,8 @@
   border-radius: 0px 25px 25px 0px;
 }
 .previous,
-.next {
+.next,
+.normal {
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
@@ -30,10 +31,15 @@
   color: #ffffff;
   cursor: pointer;
 }
+.normal {
+  background: #353f68;
+  padding: 21px 15.5px 19px 15.5px;
+}
+.next:hover,
 .previous:hover,
-.next:hover {
-  transition: 0.3s;
+.normal:hover {
   opacity: 0.7;
+  transition: 0.3s;
 }
 .footer {
   padding: 1px;

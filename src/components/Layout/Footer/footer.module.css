@@ -15,10 +15,12 @@
   grid-gap: 65px;
   margin-left: 0;
   margin-right: auto;
+  cursor: pointer;
 }
 .social {
   display: flex;
   grid-gap: 31px;
+  cursor: pointer;
 }
 .context {
   display: flex;
@@ -32,6 +34,7 @@
   line-height: 36px;
   color: #ffffff;
   transition: 0.5s;
+  cursor: pointer;
 }
 .content {
   display: flex;
@@ -43,6 +46,7 @@
   line-height: 150%;
   color: #d0d5eb;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1258px) {

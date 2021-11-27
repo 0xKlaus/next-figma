@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 
 import useTable from "./hooks/useTable";
-import TableFooter from "./hooks/TableFooter";
+// import TableFooter from "./hooks/TableFooter";
 
 import tstyles from './table.module.css'
 import pstyles from './pagination.module.css'
@@ -91,8 +91,8 @@ const Pagination = ({ data, rowsPerPage }) => {
                 </div>
                 <div className={pstyles.pagination}>
                     <div className={pstyles.previous}>previous</div>
-                    <TableFooter range={range} slice={slice} setPage={setPage} page={page} />
-                    {/* <div className={pstyles.normal}>1</div>
+                    {/* <TableFooter range={range} slice={slice} setPage={setPage} page={page} /> */}
+                    <div className={pstyles.normal}>1</div>
                     <div className={pstyles.divide}>
                         <Image src={Divide} alt="Divide" />
                     </div>
@@ -116,7 +116,7 @@ const Pagination = ({ data, rowsPerPage }) => {
                     <div className={pstyles.divide}>
                         <Image src={Divide} alt="Divide" />
                     </div>
-                    <div className={pstyles.last}>12</div> */}
+                    <div className={pstyles.normal}>12</div>
                     <div className={pstyles.next}>next</div>
                 </div>
             </div>

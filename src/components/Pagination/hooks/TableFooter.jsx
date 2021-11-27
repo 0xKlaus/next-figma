@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 
+import pstyles from '../pagination.module.css'
 import styles from "./tableFooter.module.css";
 
 const TableFooter = ({ range, setPage, page, slice }) => {
@@ -10,6 +11,7 @@ const TableFooter = ({ range, setPage, page, slice }) => {
     }, [slice, page, setPage]);
     return (
         <>
+            {/* <div className={pstyles.previous} onClick={() => setPage(-1)}>previous</div> */}
             {
                 range.map((el, index) => (
                     <div
@@ -21,6 +23,7 @@ const TableFooter = ({ range, setPage, page, slice }) => {
                     </div>
                 ))
             }
+            {/* <div className={pstyles.next} onClick={() => setPage(1)}>next</div> */}
         </>
     );
 };
