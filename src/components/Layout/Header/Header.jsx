@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import Head from "next/head"
 import Image from "next/image"
@@ -12,7 +12,30 @@ import Logo from "../../../assets/logo.png";
 import Divide from "../../../assets/divide.png";
 
 const Header = () => {
+
+    const menuData = [
+        {
+            title: "MY DASHBOARD",
+            path: '/mydashboard',
+        },
+        {
+            title: "MY FUND",
+            path: '/myfund',
+        },
+        {
+            title: "DEPOSIT",
+            path: '/deposit',
+        },
+        {
+            title: "BORROW",
+            path: '/borrow',
+        },
+    ]
+
     const router = useRouter();
+    useEffect(() => {
+        console.log(router.route)
+    }, [router])
     return (
         <React.Fragment>
             <Head>
@@ -24,15 +47,16 @@ const Header = () => {
                     <div className={styles.logo} onClick={() => router.push('/')} >
                         <Image src={Logo} alt="Logo" />
                     </div>
-                    <div className={styles.menu}>
-                        <div className={styles.menubar} onClick={() => router.push('/mydashboard')} >MY DASHBOARD</div>
-                        <div className={styles.menubar} onClick={() => router.push('/myfund')} >MY FUND</div>
-                        <div className={styles.menubar} onClick={() => router.push('/deposit/Deposit')} >DEPOSIT</div>
-                        <div className={styles.menubar} onClick={() => router.push('/borrow')} >BORROW</div>
-                        <div className={styles.divide}>
-                            <Image src={Divide} alt="Divide" />
+                    <div className={styles.menushowhide}>
+                        <div className={styles.menu}>
+                            {
+                                menuData.map((item, key) => (<div key={key} className={`${styles.menubar} ${router.route === item.path && styles.active}`} onClick={() => router.push(item.path)}>{item.title}</div>))
+                            }
+                            <div className={styles.divide}>
+                                <Image src={Divide} alt="Divide" />
+                            </div>
+                            <div className={`${styles.menubar} ${router.route === '/addnetwork' && styles.active}`} onClick={() => router.push('/addnetwork')} >Add Network</div>
                         </div>
-                        <div className={styles.menubar} onClick={() => router.push('/addnetwork')} >Add Network</div>
                     </div>
                 </div>
             </div>

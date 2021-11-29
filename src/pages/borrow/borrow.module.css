@@ -64,21 +64,16 @@
 }
 .modalcontent {
   display: flex;
-  justify-content: space-between;
-  grid-gap: 150px;
   padding-bottom: 160px;
 }
 .mgroup1 {
   display: flex;
   grid-gap: 135px;
+  margin-right: 265px;
 }
 .mgroup2 {
   display: flex;
   grid-gap: 81px;
-}
-.mgroup3 {
-  display: flex;
-  grid-gap: 18px;
 }
 .minimize {
   display: flex;
@@ -92,15 +87,7 @@
   line-height: 24px;
   color: #ffffff;
 }
-.yes {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  color: #35d387;
-}
-.deposit {
+.borrow {
   padding-top: 72px;
   display: flex;
   flex-direction: column;

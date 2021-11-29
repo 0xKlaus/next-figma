@@ -8,6 +8,7 @@
   width: 83%;
   margin: auto;
   justify-content: space-between;
+  transition: 0.4s;
 }
 .logo,
 .divide {
@@ -17,6 +18,7 @@
   display: flex;
   align-items: center;
   grid-gap: 65px;
+  transition: 0.5s;
 }
 .menubar {
   font-family: Poppins;
@@ -27,21 +29,45 @@
   text-align: center;
   color: #ffffff;
   cursor: pointer;
-  transition: 0.5s;
+  position: relative;
+  transition: 0.4s;
+}
+
+.menubar::after {
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+  transform: scaleX(0);
 }
 .menubar:hover {
-  transition: 2s;
-  border-bottom: 1px solid #ffffff;
+  opacity: 0.7;
 }
-.menubar:active {
-  color: linear-gradient(65.4deg, #c9e4e6 18.74%, #87d4ff 88.33%);
+
+.menubar:hover::after {
+  transform: scaleX(1);
 }
-.menubar:visit {
-  color: linear-gradient(65.4deg, #c9e4e6 18.74%, #87d4ff 88.33%);
+.active {
+  color: rgba(135, 212, 255, 1);
 }
 @media screen and (max-width: 1204px) {
   .menubar {
     font-weight: 300;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 780px) {
+  .menu {
+    display: none;
   }
 }
